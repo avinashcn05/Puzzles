@@ -1,0 +1,63 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<!-- Navigation -->
+<mat-toolbar class="mat-elevation-z6" color="primary">
+  <mat-toolbar-row>
+      <mat-icon>terrain</mat-icon><span>Local Weather</span>
+    <span class="example-spacer"></span>
+   
+  </mat-toolbar-row>
+</mat-toolbar>
+<!-- //Navigation -->
+
+  
+
+
+<!-- Local Weather -->
+<div id="grid-container">
+    <div class="header">
+      <!-- Hi -->
+    </div>
+    <div class="left hide-on-mobile">
+    </div>
+    <div class="middle" style="background-color:#bbb;">
+        <div id="deck">
+            <div class="card">
+                <div class="image">
+                    <img id="image2" src="" alt="Please Refresh Your Page">
+                    <img id="image"  src="" alt="Please Refresh Your Page">
+                </div>
+                <div class="info">
+                    <p>
+                        <span id="city">{{city}}</span><br>
+                        <small>
+                            <span id="country" class="small-style">{{country}}</span><br><br>
+                            <span id="date" class="small-style">{{date}}</span>
+                          </small>
+                    </p>
+                    <!-- <div id="main">
+                        {{main}}
+                    </div> -->
+                    <div id="description">
+                        {{description}}
+                    </div>
+                    <div id="floating-box">
+                        <span id="temp" class="floating-box3">{{temp}}</span>
+                        <span id="temp2" class="floating-box3" style="display:none;">{{temp2}}</span>
+                        <img id="icon" class="floating-box3" src="" alt="#ICON">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    
+      <br>
+    <div class="footer">  
+        <!-- Hammer JS need to switch content message
+          <mat-slide-toggle color="warn" >{{status}}</mat-slide-toggle> -->
+       
+        <button type="submit" id="btn-footer" class="hide-on-desktop3 button" value="True"><span>{{btnFooter}}</span></button><br><br>
+      </div>
+</div>
+<!-- local weather -->
+
