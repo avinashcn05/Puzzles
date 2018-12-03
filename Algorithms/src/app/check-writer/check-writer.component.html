@@ -1,0 +1,14 @@
+<div class="currency-writer">
+    <h2>Welcome to English Check Writer</h2>
+    
+    <form>
+     
+      <input name="currency" type="text" class="input-box" (change)="getCurrencyText()" [(ngModel)]="currency" placeholder="Enter Currency here"/>
+      
+      <b class="output-text">
+        {{getCurrencyText()}}
+      </b>
+    </form>
+    
+    
+    </div>

@@ -1,0 +1,37 @@
+.deck {
+  position: relative;
+  margin: 0 0 170px 0;
+}
+
+.dice {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  width: 30px;
+  height: 20px;
+  color: white;
+  background-color: #4D9AE5;
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.message {
+  
+}
+
+.button {
+  padding: 0 10px;
+  line-height: 24px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+  white-space: nowrap;
+  background-image: -webkit-linear-gradient(#fafafa, #eaeaea);
+  background-repeat: repeat-x;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  border-bottom-color: #c5c5c5;
+  cursor: pointer;
+}

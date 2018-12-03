@@ -1,0 +1,53 @@
+<div class="component">
+  <div class="wrapper">
+  <h1>{{symbolName}} Daily History</h1>
+
+    <div class="back-btn">
+      <button routerLink="/stocks" mat-button color="primary">
+        <mat-icon>keyboard_arrow_left</mat-icon>
+        Back to app</button>
+    </div>
+
+    <mat-card class="history-header">
+
+      <mat-grid-list cols="12"
+                     rowHeight="30px">
+        <mat-grid-tile colspan="6">
+          <p>Price</p>
+        </mat-grid-tile>
+
+        <mat-grid-tile colspan="6" class="price">
+          <p>Date</p>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </mat-card>
+
+
+    <div *ngIf="symbolHistory && symbolHistory.length === 0">
+      <h3 class="text-center">The symbol {{symbolName}} does not found</h3>
+    </div>
+
+
+    <mat-card *ngFor="let symbol of symbolHistory" class="stock">
+
+      <mat-grid-list cols="12"
+                     rowHeight="30px">
+        <mat-grid-tile colspan="6">
+          <mat-chip-list>
+            <mat-chip>{{symbol.price}}</mat-chip>
+          </mat-chip-list>
+        </mat-grid-tile>
+
+        <mat-grid-tile colspan="6" class="price">
+          <p>{{symbol.date | date: 'dd/MM/yyyy'}}</p>
+        </mat-grid-tile>
+
+
+
+      </mat-grid-list>
+
+    </mat-card>
+
+
+  </div>
+</div>

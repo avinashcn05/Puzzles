@@ -1,0 +1,26 @@
+.postfix {
+  text-align: center;
+  margin-top:20px;
+  padding:20px;
+
+}
+.output-text {
+  color:blue;
+  font-size:25px;
+  font-style: italic;
+  display: block;
+  padding-top:20px;
+}
+.input-box {
+  display: inline;
+  font-size:30px;
+  height:30px;
+  width:400px;
+ 
+}
+.submit {
+  padding:10px;
+  margin:10px;
+  width:150px;
+  font-size:20px;
+}

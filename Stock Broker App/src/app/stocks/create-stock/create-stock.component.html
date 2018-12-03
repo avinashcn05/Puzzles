@@ -1,0 +1,35 @@
+<div class="component" fxLayout="column">
+  <div class="wrapper">
+
+    <h1>Add a new stock</h1>
+    <div class="back-btn">
+    <button routerLink="/stocks" mat-button color="primary">
+      <mat-icon>keyboard_arrow_left</mat-icon>
+      Back to app</button>
+    </div>
+    <form class="" [formGroup]="stockForm">
+    <mat-card class="stock">
+        <mat-form-field class="full-width">
+          <input formControlName="stockSymbol" matInput placeholder="Stock symbol (for example: MFST)">
+        </mat-form-field>
+        <div *ngIf="(stockForm.controls.stockSymbol.dirty || stockForm.controls.stockSymbol.touched)">
+          <mat-error *ngIf="stockForm.controls.stockSymbol.hasError('pattern')">
+            Only letters are allowed
+          </mat-error>
+          <mat-error *ngIf="stockForm.controls.stockSymbol.hasError('invalidSymbol')">
+            The symbol does not exists
+          </mat-error>
+
+        </div>
+
+    </mat-card>
+
+    <button mat-raised-button color="primary"
+            class="full-width"
+            [disabled]="stockForm.invalid"
+            (click)="saveSymbol()">Save</button>
+    </form>
+
+
+  </div>
+</div>

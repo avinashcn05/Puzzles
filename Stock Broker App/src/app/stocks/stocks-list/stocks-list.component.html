@@ -1,0 +1,42 @@
+<div class="component">
+  <app-update-selector (updateSelectorEvent)="updateTimeSelector($event)"></app-update-selector>
+  <div class="wrapper">
+    <h1>Stocks Broker App</h1>
+    <mat-card *ngIf="stocks && !componentError; else loading;" class="stocks-header">
+      <mat-grid-list cols="12"
+                     rowHeight="30px">
+        <mat-grid-tile colspan="3">
+           <p>Symbol</p>
+        </mat-grid-tile>
+
+        <mat-grid-tile colspan="3" class="price">
+          <p>Price</p>
+        </mat-grid-tile>
+
+        <mat-grid-tile colspan="3">
+          <p>Volume</p>
+        </mat-grid-tile>
+      </mat-grid-list>
+
+    </mat-card>
+    <ng-template #loading>
+      <h3 *ngIf="!componentError" class="text-center">Please wait...</h3>
+    </ng-template>
+    <div *ngIf="componentError">
+      <h3 class="text-center">{{componentError}}</h3>
+    </div>
+    <div *ngIf="stocks && stocks.length === 0">
+      <h3 class="text-center">You don't have any stocks, click on the Plus button to add a new one</h3>
+    </div>
+
+    <app-stock routerLink="/stocks/{{stock.symbol}}/history"
+               (removeSymbolEvent)="removeSymbol($event)"
+               *ngFor="let stock of stocks" [stock]="stock"></app-stock>
+
+    <div class="add-btn">
+        <button mat-fab color="primary" routerLink="/stocks/add"><mat-icon>add</mat-icon></button>
+    </div>
+  </div>
+</div>
+
+

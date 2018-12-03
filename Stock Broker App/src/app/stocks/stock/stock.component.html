@@ -1,0 +1,26 @@
+<mat-card class="stock">
+  <mat-grid-list cols="12"
+                 rowHeight="30px">
+    <mat-grid-tile colspan="3">
+      <mat-chip-list>
+        <mat-chip>{{stock.symbol}}</mat-chip>
+      </mat-chip-list>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="3" class="price">
+      <p>{{stock.price}}</p>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="3">
+      <p>{{stock.volume}}</p>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="3">
+        <button (click)="removeSymbol()" mat-button color="accent">
+          <mat-icon>delete</mat-icon>
+          </button>
+    </mat-grid-tile>
+
+
+  </mat-grid-list>
+</mat-card>

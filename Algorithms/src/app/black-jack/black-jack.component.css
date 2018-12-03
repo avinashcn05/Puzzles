@@ -1,0 +1,77 @@
+body {
+  background-color: black;
+  font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.wrapper {
+  background-color: #05600a; /* Dark Green */
+  color: #fff;
+  margin: auto;
+  text-align: center;
+  width: 95vw;
+}
+#game-title {
+  padding-top: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.red {
+  color: red;
+}
+.black {
+  color: black;
+}
+.container {
+  color: #000;
+  width: 100%;
+}
+.sides {
+  display: inline-block;
+  margin: 0rem 3rem;
+}
+.card {
+  background-color: #ebf4ed;
+  border-radius: 5%;
+  display: inline-block;
+  height: 9rem;
+  position: relative;
+  width: 6.5rem;
+}
+.card p {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+.card-back {
+  background: linear-gradient(45deg, #ffedee, #ff4f58);
+}
+#hit1, #hit2, #hit3 {
+  display: none;
+}
+.score {
+  background-color: #ebf4ed;
+  border-radius: 100%;
+  height: 2rem;
+  margin: 1rem auto 0;
+  position: relative;
+  width: 3rem;
+}
+.score p {
+  position: relative;
+  top: 0.4rem;
+}
+#message {
+  margin: 0;
+}
+.controls {
+  padding: 2rem 0 3rem;
+}
+
+@media (max-width: 728px) {
+  .sides {
+    display: block;
+    margin: 3rem auto;
+    width: 100%;
+  }
+}

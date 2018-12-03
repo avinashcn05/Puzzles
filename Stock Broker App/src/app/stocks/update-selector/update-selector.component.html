@@ -1,0 +1,7 @@
+<mat-form-field class="update-selector">
+  <mat-select [(value)]="selectedValue" (change)="valueChanged()" placeholder="Update Every">
+    <mat-option *ngFor="let num of [1,2,10]" [value]="num">
+      {{ num }} minutes
+    </mat-option>
+  </mat-select>
+</mat-form-field>

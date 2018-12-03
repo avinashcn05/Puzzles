@@ -1,0 +1,24 @@
+<div class="spiral">
+  <h1>
+
+    Integer Spiral
+
+
+  </h1>
+  <input type="text" class="form-input" placeholder="Enter Total Numbers in the Spiral" [(ngModel)]="numberArr" name="numberHere"/>
+  <!-- <select type="text" class="form-input" placeholder="Enter Direction in the Flow">
+    <option value="left">Left</option>
+    <option value="right">Right</option>
+
+</select> -->
+
+  <input type="submit" value="submit" class="button" class="spiralbtn" (click)="generateMatrix()"/>
+
+
+  <div id="demopanel" class="panel">
+      <div id="printLogDiv"></div>
+      <table id="printLogTable" class="table"></table>
+    </div>
+
+
+</div>

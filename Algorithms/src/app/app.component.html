@@ -1,0 +1,15 @@
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a class="link" routerLink="/postFix">PostFix</a>
+  <a class="link" routerLink="/checkwriter">Check Writer</a>
+  <a class="link" routerLink="/gameoflife">Game of Life</a>
+  <a class="link" routerLink="/mysticsquare">Mystic Square</a>
+   <a class="link" routerLink="/integerspiral">Integer Sprial</a>
+  <a class="link" routerLink="/blackjack">Black Jack</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776; open</span>
+
+
+<router-outlet></router-outlet>

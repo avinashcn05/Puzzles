@@ -1,0 +1,26 @@
+.spiral {
+  text-align: center;
+  font-size: 26px;
+  font-style: italic;
+  display: block;
+
+}
+
+.form-input {
+  display: block;
+  font-size: 25px;
+  
+  
+  margin-left: 35%;
+  margin-top: 5%;
+  width: 450px;
+}
+
+
+select.form-input {
+  width: 150px;
+  margin-left:40%;
+}
+.table-bordered {
+  border:1px solid black;
+}

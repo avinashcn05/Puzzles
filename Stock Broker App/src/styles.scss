@@ -1,0 +1,70 @@
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+html, body {
+  height: 100vh;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue";
+  color: #fff;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.component {
+  padding-top: 15px;
+
+  .wrapper {
+    max-width: 750px;
+    margin: auto;
+    padding: 15px;
+
+    .stock:hover {
+      cursor: pointer;
+      background: #002732;
+    }
+
+    .stock {
+      background: #13303f;
+      color: #fff;
+      mat-chip {
+        background: #d4d4d4;
+        color: #252525;
+      }
+
+      .price {
+        color: #9cffad;
+      }
+    }
+
+
+    h1 {
+      font-weight:200;
+      text-align: center;
+      font-size: 42px;
+    }
+
+    .add-btn {
+      float: right;
+      margin-top: 15px;
+    }
+
+    .back-btn {
+      margin-bottom: 5px;
+    }
+
+    .text-center {
+      text-align: center;
+      font-weight:100;
+      color: #6effab;
+    }
+
+
+  }
+
+}
+

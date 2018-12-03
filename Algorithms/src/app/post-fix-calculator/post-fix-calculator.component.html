@@ -1,0 +1,18 @@
+<div class="postfix">
+<h1>Postfix Calculator</h1>
+
+<form id="form">
+  <div>
+    
+  <input  name="expression" 
+  [(ngModel)]="expression" class="input-box" type="text" id="input" placeholder="1 2 +" />
+  </div>
+
+
+  <input type="submit" class="submit" value="submit" (click)="getExpression()"/>
+
+
+  <b class="output-text"> {{result}} </b>
+ 
+</form>
+</div>
