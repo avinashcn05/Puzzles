@@ -1,0 +1,21 @@
+{
+  "short_name": "Weather",
+  "name": "Local Weather",
+  "icons": [
+    {
+      "src": "src/assets/img/android-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "src/assets/img/android-icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#424242",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#424242"
+}
